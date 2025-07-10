@@ -1,0 +1,103 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.login-left,
+.login-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-left {
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+}
+
+.login-image {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.create-account {
+  margin-top: 20px;
+  text-decoration: underline;
+  color: black;
+  font-weight: 500;
+}
+
+.login-right {
+  padding: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 15px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.remember-forgot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 20px;
+}
+
+.login-btn {
+  background-color: #4da6ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.facebook {
+  color: #3b5998;
+  cursor: pointer;
+}
+.twitter {
+  color: #00acee;
+  cursor: pointer;
+}
+.google {
+  cursor: pointer;
+}
