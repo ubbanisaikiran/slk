@@ -8,8 +8,8 @@ const Search = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const API_KEY = "AIzaSyBH5xD1XjYkYliwUp6Rs_gj1gNkARnBxRk";
-  const CX = "a165fcf02796048ac";
+  const API_KEY = "Enter Your API Key";
+  const CX = "Enter your key from google programmable search engine";
 
   const handleSearch = async () => {
     if (!keyword.trim()) return;
@@ -73,11 +73,25 @@ const Search = () => {
         />
         <button
           onClick={handleSearch}
-          style={{ marginLeft: 10, padding: "10px 20px", cursor: loading ? "not-allowed" : "pointer" }}
+          style={{
+            marginLeft: "10px",
+            padding: "10px 20px",
+            fontSize: "16px",
+            backgroundColor: "#1a73e8",
+            color: "white",
+            border: "none",
+            borderRadius: "4px",
+            cursor: loading ? "not-allowed" : "pointer",
+            boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)",
+            transition: "background-color 0.3s"
+          }}
+          onMouseOver={(e) => e.currentTarget.style.backgroundColor = loading ? "" : "#1765cc"}
+          onMouseOut={(e) => e.currentTarget.style.backgroundColor = loading ? "" : "#1a73e8"}
           disabled={loading}
         >
           Search
         </button>
+
       </div>
 
       {loading && <p>Loading results...</p>}

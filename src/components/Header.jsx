@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
-import img2 from '../../src/images/favicon.jpg'
+import img2 from '../../src/images/favicon.jpg';
+import { useNavigate } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ setActiveTab }) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -17,10 +17,8 @@ const Header = () => {
       </div>
 
       <nav className="header-center">
-        <Link to="/home">Home</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact Us</Link>
+        <button className="nav-btn" onClick={() => setActiveTab('search')}>Search</button>
+        <button className="nav-btn" onClick={() => setActiveTab('scraping')}>Web Scraping</button>
       </nav>
 
       <div className="header-right">

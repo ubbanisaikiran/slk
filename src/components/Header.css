@@ -60,3 +60,16 @@
 .logo{
     border-radius: 100%;
 }
+.header-center button {
+  margin: 0 10px;
+  padding: 8px 14px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header-center button:hover {
+  text-decoration: underline;
+}
