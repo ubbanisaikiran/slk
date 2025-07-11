@@ -101,3 +101,6 @@ h2 {
 .google {
   cursor: pointer;
 }
+.error-text{
+  color: rgb(255, 0, 0);
+}
