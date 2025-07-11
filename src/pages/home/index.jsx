@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Search from '../../components/Search';
-import Webscrapping from '../../components/webscraping';
+import Webscraping from '../../components/webscraping';
 
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
   const renderContent = () => {
     switch (activeTab) {
       case 'scraping':
-        return <Webscrapping />;
+        return <Webscraping />;
       case 'search':
       default:
         return <Search />;
